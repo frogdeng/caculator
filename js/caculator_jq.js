@@ -1,9 +1,18 @@
 
 $(document).ready(function(){
   
-  var result="";
+  var result= 0;
   $(".btn").click(function(){
+
+ 
     var input = $(this).attr("value");
+
+    if(input == "*" && result == ''){
+      result = '0'
+    }else if(input == "/" && result == ''){
+      result = '0'
+    }
+
     if(input != "AC" && input != "CE" && input != "%" && input != "="){
       if(result === 0){
         result = "";
@@ -11,7 +20,6 @@ $(document).ready(function(){
       }else{
         result += input;
       }
-
 
     }else if(input == "AC"){
       result = 0;
@@ -22,26 +30,10 @@ $(document).ready(function(){
     }else if(input == "%"){
       result = eval(result / 100)
     }
+
     $("#result_sectiont").val(result);
     console.log(result)
   });
-
-
-
-
-  // $('.btn').click(function(){
-  //   var keyIn = $(this).attr("value")
-    
-  //   if(keyIn !='AC' && keyIn !='CE' && keyIn !='%' && keyIn !='='){
-  //     result += keyIn
-  //     console.log(result)
-
-  //   }else if( keyIn == "="){
-  //     result = eval(keyIn)
-  //   }
-
-
-  // })
 
 
 
