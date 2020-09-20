@@ -1,10 +1,8 @@
-
 $(document).ready(function(){
   
   var result= 0;
   $(".btn").click(function(){
 
- 
     var input = $(this).attr("value");
 
     if(input == "*" && result == ''){
@@ -32,13 +30,6 @@ $(document).ready(function(){
     }
 
     $("#result_sectiont").val(result);
-    console.log(result)
   });
-
-
-
-
-
-
 
 })
