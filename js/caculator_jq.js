@@ -22,7 +22,7 @@ $(document).ready(function(){
     }else if(input == "AC"){
       result = 0;
     }else if(input == "CE"){
-      result = result.slice(0,-1);
+      result = result.toString().slice(0,-1);
     }else if(input == "="){
       result = eval(result);
     }else if(input == "%"){
