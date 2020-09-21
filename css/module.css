@@ -228,18 +228,16 @@ body {
   .container {
     max-width: 800px;
     width: 100%;
-    padding: 0 20px;
-    background: #ddd;
     margin: 0 auto;
+    padding: 0 20px;
   }
 }
 
 @media all and (min-width: 891px) {
   .container {
     max-width: 1240px;
-    width: 1200px;
-    background: #ddd;
     margin: 0 auto;
+    padding: 0 20px;
   }
 }
 
